@@ -8,3 +8,10 @@ td{
   flex-direction: column;
 
 }
+.imagen{
+	width: 100px;
+	height: 100px;
+	margin-top: auto;
+	margin-left: -10px;
+}
+

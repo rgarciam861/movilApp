@@ -1,6 +1,17 @@
 <h1>Detalles del telefono seleccionado: {{id}}</h1>
 
    <div *ngFor="let item of Telefono" class="movil">
-    <img src="" class="imagen">
-    <h3>{{item.marca.marca}}</h3>
+    <img src="https://cdn.pixabay.com/photo/2016/10/05/17/11/smartphone-1717163_960_720.png" class="imagen">
+    <!-- <link href="../../imagenes/iphone.png"> -->
+    <h3>Nombre: {{item.nombre}}</h3>
+    <h3>Marca:{{item.marca.marca}}</h3>
+    <h3>Ram: Marca: {{item.ram.marca.marca}}, Memoria: {{item.ram.memoriaGB}}GB, Modelo: {{item.ram.modelo.modelo}}</h3>
+    <h3>Procesador: Nucleos: {{item.procesador.nucleos}}, Velocidad:{{item.procesador.velocidad}} Hercios, Marca: {{item.procesador.marca.marca}}, Modelo: {{item.procesador.modelo.modelo}}</h3>
+    <h3>Modelo: {{item.modelo.modelo}}</h3>
+    <h3>Material de fabricacion: {{item.materialFabricacion}}</h3>
+    <h3>Peso: {{item.peso}} gramos</h3>
+    <h3>Pantalla: Pulgadas: {{item.pantalla.pulgadas}}, Marca: {{item.pantalla.marca.marca}}, Modelo: {{item.pantalla.modelo.modelo}} </h3>
+    <h3>Bateria: Capacidad: {{item.bateria.capacidad}}, Tipo de carga: {{item.bateria.tipoDeCarga}}, Tipo de bateria:  {{item.bateria.tipoDeBateria}}, Marca: {{item.bateria.marca.marca}}, Modelo: {{item.bateria.modelo.modelo}}</h3>
+    <h3>Almacenamiento: {{item.almacenamiento}} GB</h3>
+    <h3>Complementos: {{item.complementos[0].nombre}}, {{item.complementos[1].nombre}}, {{item.complementos[2].nombre}}</h3>
   </div>

@@ -44,6 +44,9 @@ export class TelefonodetailComponent implements OnInit {
     if(this._authenticated){
 
         this.moviles$=this.service.getMovils(this.accessToken)
+        this.moviles$.subscribe((lista)=>{
+          console.log(lista.data.moviles)
+        })
 
 
 

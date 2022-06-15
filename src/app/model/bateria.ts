@@ -3,8 +3,8 @@ import { Modelo } from "./modelo"
 
 export interface Bateria{
   id:number
-  tipodeBateria:string
-  tipodeCarga:string
+  tipoDeBateria:string
+  tipoDeCarga:string
   capacidad:number
   marca:Marca
   modelo:Modelo

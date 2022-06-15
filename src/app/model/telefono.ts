@@ -10,6 +10,7 @@ export interface Telefono{
   id:number
   ram:Ram
   peso:number
+  nombre:string
   almacenamiento:number
   materialFabricacion:string
   marca:Marca
