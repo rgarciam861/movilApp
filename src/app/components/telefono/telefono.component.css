@@ -1,0 +1,10 @@
+td{
+  padding: 6px;
+}
+
+.movil{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+}

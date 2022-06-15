@@ -1,0 +1,24 @@
+<h1>TIENDA DE TELEFONOS</h1>
+<!-- <div *ngIf="moviles$ | async as telefono" > -->
+
+  <!-- <div *ngFor="let item of telefono.data.moviles" class="movil">
+    <img src="" class="imagen">
+      <p>{{ item.id }}</p>
+      <p>{{ item.materialFabricacion}}</p>
+      <p>{{item.bateria.marca.marca}}</p>
+      <p>{{item.bateria.modelo.modelo}}</p>
+      <p>{{item.peso}} Gramos</p> -->
+  <!-- </div> -->
+    <div *ngFor="let item of moviles">
+    <p>Telefono: {{ item.id }}</p>
+    <p>Marca: {{ item.marca.marca }}</p>
+    <p>Modelo: {{ item.modelo.modelo }}</p>
+    <p>Almacenamiento: {{ item.almacenamiento }}</p>
+    <a [routerLink]="['/telefono',item.id]" >Ver mas detalles</a>
+  </div>
+
+
+
+
+
+<!-- </div> -->
